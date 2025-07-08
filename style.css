@@ -34,6 +34,27 @@ body {
   position: relative;
 }
 
+.box-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+input[type="radio"] {
+  margin-top: 6px;
+  accent-color: #ff4c8b;
+  flex-shrink: 0;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+
 .box.selected {
   border-color: #ff4c8b;
   background-color: #fff0f5;

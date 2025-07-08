@@ -1,42 +1,45 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BOGO Offer</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
     <h2 class="title">YAY! It’s BOGO</h2>
 
-    <form id="options-form">
+    <form id="optionsForm">
       <!-- Option 1 -->
       <div class="box">
-        <label>
+        <label class="box-label">
           <input type="radio" name="unit" value="1" />
           <div class="box-content">
-            <span class="badge">10% Off</span>
-            <div class="price-info">
-              <strong>$10.00 USD</strong>
-              <del>$24.00 USD</del>
+            <div class="top-row">
+              <span class="badge">10% Off</span>
+              <div class="price-info">
+                <strong>$10.00 USD</strong>
+                <del>$24.00 USD</del>
+              </div>
             </div>
             <p class="desc">Standard Price</p>
           </div>
         </label>
       </div>
 
-      <!-- Option 2 -->
+      <!-- Option 2 (selected by default) -->
       <div class="box most-popular selected">
-        <label>
+        <label class="box-label">
           <input type="radio" name="unit" value="2" checked />
           <div class="popular-tag">MOST POPULAR</div>
           <div class="box-content">
-            <span class="badge">20% Off</span>
-            <div class="price-info">
-              <strong>$18.00 USD</strong>
-              <del>$24.00 USD</del>
+            <div class="top-row">
+              <span class="badge">20% Off</span>
+              <div class="price-info">
+                <strong>$18.00 USD</strong>
+                <del>$24.00 USD</del>
+              </div>
             </div>
             <div class="expand">
               <div class="row">
@@ -72,19 +75,22 @@
 
       <!-- Option 3 -->
       <div class="box">
-        <label>
+        <label class="box-label">
           <input type="radio" name="unit" value="3" />
           <div class="box-content">
-            <span class="badge">30% Off</span>
-            <div class="price-info">
-              <strong>$24.00 USD</strong>
-              <del>$24.00 USD</del>
+            <div class="top-row">
+              <span class="badge">30% Off</span>
+              <div class="price-info">
+                <strong>$24.00 USD</strong>
+                <del>$24.00 USD</del>
+              </div>
             </div>
           </div>
         </label>
       </div>
     </form>
 
+    <!-- Footer -->
     <div class="footer">
       <p class="delivery">Free Delivery</p>
       <p class="total">Total: $18.00 USD</p>
@@ -93,7 +99,6 @@
     </div>
   </div>
 
-  <!-- Script -->
-	<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
